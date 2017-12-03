@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listbackground">
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18dp"
+        android:textColor="#080808"
+        android:text="EventName" />
+
+    <TextView
+        android:id="@+id/address1"
+        android:layout_width="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14dp"
+        android:textColor="#080808"
+        android:text="Place: "
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14dp"
+        android:textColor="#080808"
+        android:layout_toRightOf="@id/address1"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14dp"
+        android:textColor="#080808"
+        android:text="Time: "
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14dp"
+        android:textColor="#080808"
+        android:layout_toRightOf="@id/time1"
+        android:text="Start time" />
+
+
+
+
+</RelativeLayout>

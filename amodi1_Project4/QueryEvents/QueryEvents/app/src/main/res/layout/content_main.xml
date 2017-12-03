@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/locationView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Location:"
+        android:textColor="#ffffff"
+        />
+
+    <EditText
+        android:id="@+id/locationTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:layout_alignTop="@id/locationView"
+        android:layout_toRightOf="@id/locationView"
+        />
+    <TextView
+        android:id="@+id/categoryView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Category:"
+        android:textColor="#ffffff"
+        android:layout_below="@id/locationView"
+        />
+
+    <EditText
+        android:id="@+id/categoryTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:layout_alignTop="@id/categoryView"
+        android:layout_toRightOf="@id/categoryView"
+        />
+    <TextView
+        android:id="@+id/keywordView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="Keywords:"
+        android:textColor="#ffffff"
+        android:layout_below="@id/categoryView"
+        />
+
+    <EditText
+        android:id="@+id/keywordTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:layout_alignTop="@id/keywordView"
+        android:layout_toRightOf="@id/keywordView"
+        />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_below="@id/keywordView"
+        />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/searchButton"
+        android:background="@color/background"
+        />
+</RelativeLayout>
